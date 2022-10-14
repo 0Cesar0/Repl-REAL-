@@ -4,7 +4,7 @@
 #show you two useful functions for no
 from random import randint
 from random import shuffle
-
+from random import choice
 print("random")
 dice1 = randint(1,7)
 print(f"Dice : {dice1}")
@@ -26,10 +26,13 @@ my_list = list(my_list)
 shuffle(my_list)
 print(my_list)
 
-my_list = randint(1,10000000000001)
+my_list = randint(1,10000000000000000000000000000000000000000000000000000001)
 print(my_list)
 
 if my_list %2 == 0:
   print("Number is even")
 else:print("This number is odd")
 
+color = ["red","blue","violet","pink","black"]
+random_color = choice(color)
+print(f"color is {random_color}")
